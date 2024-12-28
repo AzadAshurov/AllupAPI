@@ -1,10 +1,65 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{886879CC-8421-4AF4-840F-3D5CD301F545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllupAPI.API", "presentation\AllupAPI.API\AllupAPI.API.csproj", "{C702675B-8D7C-4885-A876-64C8A3565AA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{72E0AE0F-0E8B-4213-9C50-5C44B71AE611}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C63D8320-E12B-4990-9482-73A8E537BE2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C8319E5C-1093-48C3-BC06-24339428350F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F1EC1925-B98E-4CB5-A764-217BA8434029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllupAPI.Application", "src\Core\AllupAPI.Application\AllupAPI.Application.csproj", "{89EE76A7-1E8C-4DAD-86A5-FD3D2F10B695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllupAPI.Domain", "src\Core\AllupAPI.Domain\AllupAPI.Domain.csproj", "{D0D1FBB8-EF48-48CC-B0FD-01A753642D9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllupAPI.Infrastructure", "src\Infrastructure\AllupAPI.Infrastructure\AllupAPI.Infrastructure.csproj", "{61368780-0CA3-4683-93E1-C0B777FEC659}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllupAPI.Persistence", "src\Infrastructure\AllupAPI.Persistence\AllupAPI.Persistence.csproj", "{9429FCB5-1472-4C28-8CB4-353DDFC181F6}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C702675B-8D7C-4885-A876-64C8A3565AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C702675B-8D7C-4885-A876-64C8A3565AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C702675B-8D7C-4885-A876-64C8A3565AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C702675B-8D7C-4885-A876-64C8A3565AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89EE76A7-1E8C-4DAD-86A5-FD3D2F10B695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89EE76A7-1E8C-4DAD-86A5-FD3D2F10B695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89EE76A7-1E8C-4DAD-86A5-FD3D2F10B695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89EE76A7-1E8C-4DAD-86A5-FD3D2F10B695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D1FBB8-EF48-48CC-B0FD-01A753642D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D1FBB8-EF48-48CC-B0FD-01A753642D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D1FBB8-EF48-48CC-B0FD-01A753642D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D1FBB8-EF48-48CC-B0FD-01A753642D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61368780-0CA3-4683-93E1-C0B777FEC659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61368780-0CA3-4683-93E1-C0B777FEC659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61368780-0CA3-4683-93E1-C0B777FEC659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61368780-0CA3-4683-93E1-C0B777FEC659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9429FCB5-1472-4C28-8CB4-353DDFC181F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9429FCB5-1472-4C28-8CB4-353DDFC181F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9429FCB5-1472-4C28-8CB4-353DDFC181F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9429FCB5-1472-4C28-8CB4-353DDFC181F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C702675B-8D7C-4885-A876-64C8A3565AA8} = {886879CC-8421-4AF4-840F-3D5CD301F545}
+		{C63D8320-E12B-4990-9482-73A8E537BE2B} = {72E0AE0F-0E8B-4213-9C50-5C44B71AE611}
+		{C8319E5C-1093-48C3-BC06-24339428350F} = {72E0AE0F-0E8B-4213-9C50-5C44B71AE611}
+		{89EE76A7-1E8C-4DAD-86A5-FD3D2F10B695} = {C63D8320-E12B-4990-9482-73A8E537BE2B}
+		{D0D1FBB8-EF48-48CC-B0FD-01A753642D9B} = {C63D8320-E12B-4990-9482-73A8E537BE2B}
+		{61368780-0CA3-4683-93E1-C0B777FEC659} = {C8319E5C-1093-48C3-BC06-24339428350F}
+		{9429FCB5-1472-4C28-8CB4-353DDFC181F6} = {C8319E5C-1093-48C3-BC06-24339428350F}
 	EndGlobalSection
 EndGlobal
